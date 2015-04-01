@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SubOrderCicadinea.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    //Объявляем номер в справочнике и название:
+    NSInteger i = 1;
+    NSString * item = [NSString stringWithFormat:@"%ld", i];
+    NSString * paragraf = @"Отряд Равнокрылые (Homoptera)";
+    NSString * title = @"Подотряд Цикадовые - Cicadinea";
+    
+    
+    //Выводим на экран параграф, порядковый номер и оглавление в справочнике:
+    
+    NSLog(@"%@", paragraf);
+    NSLog(@"%@. %@: ", item, title); /*здесь можно было использовать сразу i вместо item, но для тренировки преобразовала сначала число в в строковую переменную, а после вывела ее на экран*/
+    
+    //вызываем метод определения подотряда Цикадовых:
+    SubOrderCicadinea * cicadinea = [[SubOrderCicadinea alloc]init];
+    [cicadinea determination_Cicadinea];
+        
+    
     return YES;
 }
 

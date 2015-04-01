@@ -15,6 +15,8 @@
 		84D8C7721ACB430600049938 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D8C7711ACB430600049938 /* Images.xcassets */; };
 		84D8C7751ACB430600049938 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D8C7731ACB430600049938 /* LaunchScreen.xib */; };
 		84D8C7811ACB430600049938 /* LessonTwoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8C7801ACB430600049938 /* LessonTwoTests.m */; };
+		84D8C78D1ACB43C300049938 /* OrderHomoptera.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8C78C1ACB43C300049938 /* OrderHomoptera.m */; };
+		84D8C7931ACB620F00049938 /* SubOrderCicadinea.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8C7921ACB620F00049938 /* SubOrderCicadinea.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		84D8C77A1ACB430600049938 /* LessonTwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LessonTwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D8C77F1ACB430600049938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D8C7801ACB430600049938 /* LessonTwoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LessonTwoTests.m; sourceTree = "<group>"; };
+		84D8C78B1ACB43C300049938 /* OrderHomoptera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHomoptera.h; sourceTree = "<group>"; };
+		84D8C78C1ACB43C300049938 /* OrderHomoptera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHomoptera.m; sourceTree = "<group>"; };
+		84D8C7911ACB620F00049938 /* SubOrderCicadinea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubOrderCicadinea.h; sourceTree = "<group>"; };
+		84D8C7921ACB620F00049938 /* SubOrderCicadinea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubOrderCicadinea.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 		84D8C7551ACB430600049938 = {
 			isa = PBXGroup;
 			children = (
+				84D8C78A1ACB431C00049938 /* OdersInsects */,
 				84D8C7601ACB430600049938 /* LessonTwo */,
 				84D8C77D1ACB430600049938 /* LessonTwoTests */,
 				84D8C75F1ACB430600049938 /* Products */,
@@ -120,6 +127,17 @@
 				84D8C77F1ACB430600049938 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84D8C78A1ACB431C00049938 /* OdersInsects */ = {
+			isa = PBXGroup;
+			children = (
+				84D8C78B1ACB43C300049938 /* OrderHomoptera.h */,
+				84D8C78C1ACB43C300049938 /* OrderHomoptera.m */,
+				84D8C7911ACB620F00049938 /* SubOrderCicadinea.h */,
+				84D8C7921ACB620F00049938 /* SubOrderCicadinea.m */,
+			);
+			name = OdersInsects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D8C78D1ACB43C300049938 /* OrderHomoptera.m in Sources */,
+				84D8C7931ACB620F00049938 /* SubOrderCicadinea.m in Sources */,
 				84D8C7671ACB430600049938 /* AppDelegate.m in Sources */,
 				84D8C7641ACB430600049938 /* main.m in Sources */,
 				84D8C76D1ACB430600049938 /* ViewController.m in Sources */,
