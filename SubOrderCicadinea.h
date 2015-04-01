@@ -11,5 +11,6 @@
 @interface SubOrderCicadinea : OrderHomoptera
 
 - (void) determination_Cicadinea;
+- (void) determination_SubOrderCicadinea : (NSString *) subOrderCicadinea;
 
 @end

@@ -18,20 +18,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
+    SubOrderCicadinea * cicadinea = [[SubOrderCicadinea alloc]init];
+    OrderHomoptera * homoptera = [[OrderHomoptera alloc]init];
+    
     //Объявляем номер в справочнике и название:
-    NSInteger i = 1;
-    NSString * item = [NSString stringWithFormat:@"%ld", i];
-    NSString * paragraf = @"Отряд Равнокрылые (Homoptera)";
-    NSString * title = @"Подотряд Цикадовые - Cicadinea";
+    //NSInteger i = 1;
+    //NSString * item = [NSString stringWithFormat:@"%ld", i];
+    //Нумерацию справочника пока убрала за ненадобностью.
     
     
-    //Выводим на экран параграф, порядковый номер и оглавление в справочнике:
-    
-    NSLog(@"%@", paragraf);
-    NSLog(@"%@. %@: ", item, title); /*здесь можно было использовать сразу i вместо item, но для тренировки преобразовала сначала число в в строковую переменную, а после вывела ее на экран*/
+    //Выводим на экран параграф и оглавление в справочнике (их берем из OrderHomoptera.m и SubOrderCicadinea.m):
+    NSString * orderHomoptera = @"";
+    [homoptera determination_OrderHomoptera:orderHomoptera];
+    NSString * title = @"Отличительные характеристики:";
+    NSString * subOrderCicadenia = @"- определение по взрослой особи.";
+    [cicadinea determination_SubOrderCicadinea:subOrderCicadenia];
+    NSLog(@"%@ ", title);
     
     //вызываем метод определения подотряда Цикадовых:
-    SubOrderCicadinea * cicadinea = [[SubOrderCicadinea alloc]init];
     [cicadinea determination_Cicadinea];
         
     

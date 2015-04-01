@@ -14,6 +14,8 @@
 - (void) determination_Wings;
 - (void) determination_Paws;
 - (void) determination_Oral;
+- (void) determination_OrderHomoptera : (NSString*) orderHomoptera;
+
 
 
 @end

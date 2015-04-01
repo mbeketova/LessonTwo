@@ -29,26 +29,39 @@
 //дополнительное определение по лапкам:
 - (void) determination_Paws {
     
+    int pawsI = 3;
+    
     //в дальнейшем здесь будут условия
     
-    NSLog(@"Лапки 3-члениковые.");
+    NSLog(@"Лапки %i-х члениковые", pawsI);
 }
 
 //определение по усикам:
 - (void) determination_Mustache {
     
+    int mustacheI = 3;
+    NSString * mustacheL = @"очень короткие ";
+    
     //в дальнейшем здесь будут условия
     
-    NSLog(@"Антенны очень короткие, 3-х члениковые.");
+    
+    NSLog(@"Антенны %@,%i-х члениковые.", mustacheL, mustacheI);
 
 }
 
 //дополнительное определение по крыльям
 - (void) determination_Wings {
     
-    //в дальнейшем здесь будут условия
+    NSString * wings = @"Крылья с продольными и поперечными жилками.";
+   /*BOOL boolWings = YES;
+    в дальнейшем здесь будет задаваться вопрос, сканироваться ответ и создаваться условие на выполнение условия: (!=boolWings)*/
     
-    NSLog(@"Крылья с продольными и поперечными жилками.");
+    NSLog(@"%@", wings);
+}
+
+//выводим название подотряда: 
+- (void) determination_SubOrderCicadinea : (NSString *) subOrderCicadinea{
+    NSLog(@"Подотряд Цикадовые (Cicadinea)%@", subOrderCicadinea);
 }
 
 @end
