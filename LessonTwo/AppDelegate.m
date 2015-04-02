@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "SubOrderCicadinea.h"
+#import "SubOrderPsyllinea.h"
+#import "SubOrderAleurodinea.h"
+#import "SubOrderAphidinea.h"
+#import "SubOrderCoccinea.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +21,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   
+    
+   //инициализируем все методы, которые будем использовать:
     SubOrderCicadinea * cicadinea = [[SubOrderCicadinea alloc]init];
     OrderHomoptera * homoptera = [[OrderHomoptera alloc]init];
+    SubOrderPsyllinea * psyllinea = [[SubOrderPsyllinea alloc]init];
+    SubOrderAleurodinea * aleurodinea = [[SubOrderAleurodinea alloc]init];
+    SubOrderAphidinea * aphidinea = [[SubOrderAphidinea alloc]init];
+    SubOrderCoccinea * coccinea = [[SubOrderCoccinea alloc]init];
     
     //Объявляем номер в справочнике и название:
     //NSInteger i = 1;
@@ -28,15 +37,35 @@
     
     
     //Выводим на экран параграф и оглавление в справочнике (их берем из OrderHomoptera.m и SubOrderCicadinea.m):
-    NSString * orderHomoptera = @"";
+    NSString * orderHomoptera;
     [homoptera determination_OrderHomoptera:orderHomoptera];
-    NSString * title = @"Отличительные характеристики:";
     NSString * subOrderCicadenia = @"- определение по взрослой особи.";
     [cicadinea determination_SubOrderCicadinea:subOrderCicadenia];
-    NSLog(@"%@ ", title);
-    
     //вызываем метод определения подотряда Цикадовых:
     [cicadinea determination_Cicadinea];
+   
+    
+    //Выводим на экран следующий подотряд: Листоблошки (SubOrderPsyllinea):
+    NSString * subOrderPsyllinea;
+    [psyllinea determination_SubOrderPsyllinea:subOrderPsyllinea];
+    [psyllinea determination_Psyllinea];
+    
+    //Выводим на экран следующий подотряд: Белокрылки (SubOrderAleurodinea):
+    NSString * subOrderAleurodinea;
+    [aleurodinea determination_SubOrderAleurodinea:subOrderAleurodinea];
+    [aleurodinea determination_Aleurodinea];
+                
+    
+    //Выводим на экран следующий подотряд: Тли (Aphidinea)
+    NSString * subOrderAphidinea;
+    [aphidinea determination_SubOrderAphidinea:subOrderAphidinea];
+    [aphidinea determination_Aphidinea];
+    
+    //Выводим на экран следующий подотряд: Подотряд Кокциды (Coccinea)
+    NSString * subOrderCoccinea;
+    [coccinea determination_SubOrderCoccinea:subOrderCoccinea];
+    [coccinea determination_Coccinea];
+    
         
     
     return YES;

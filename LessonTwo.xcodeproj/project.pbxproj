@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84354A601ACD9AC800812782 /* SubOrderPsyllinea.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354A5F1ACD9AC800812782 /* SubOrderPsyllinea.m */; };
+		84354A631ACDA18400812782 /* SubOrderAleurodinea.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354A621ACDA18400812782 /* SubOrderAleurodinea.m */; };
+		84354A661ACDA58300812782 /* SubOrderAphidinea.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354A651ACDA58300812782 /* SubOrderAphidinea.m */; };
+		84354A691ACDA8E100812782 /* SubOrderCoccinea.m in Sources */ = {isa = PBXBuildFile; fileRef = 84354A681ACDA8E100812782 /* SubOrderCoccinea.m */; };
 		84D8C7641ACB430600049938 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8C7631ACB430600049938 /* main.m */; };
 		84D8C7671ACB430600049938 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D8C7661ACB430600049938 /* AppDelegate.m */; };
 		84D8C76A1ACB430600049938 /* LessonTwo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84D8C7681ACB430600049938 /* LessonTwo.xcdatamodeld */; };
@@ -30,6 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84354A5E1ACD9AC800812782 /* SubOrderPsyllinea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubOrderPsyllinea.h; sourceTree = "<group>"; };
+		84354A5F1ACD9AC800812782 /* SubOrderPsyllinea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubOrderPsyllinea.m; sourceTree = "<group>"; };
+		84354A611ACDA18400812782 /* SubOrderAleurodinea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubOrderAleurodinea.h; sourceTree = "<group>"; };
+		84354A621ACDA18400812782 /* SubOrderAleurodinea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubOrderAleurodinea.m; sourceTree = "<group>"; };
+		84354A641ACDA58300812782 /* SubOrderAphidinea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubOrderAphidinea.h; sourceTree = "<group>"; };
+		84354A651ACDA58300812782 /* SubOrderAphidinea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubOrderAphidinea.m; sourceTree = "<group>"; };
+		84354A671ACDA8E100812782 /* SubOrderCoccinea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubOrderCoccinea.h; sourceTree = "<group>"; };
+		84354A681ACDA8E100812782 /* SubOrderCoccinea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubOrderCoccinea.m; sourceTree = "<group>"; };
 		84D8C75E1ACB430600049938 /* LessonTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D8C7621ACB430600049938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D8C7631ACB430600049938 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,6 +148,14 @@
 				84D8C78C1ACB43C300049938 /* OrderHomoptera.m */,
 				84D8C7911ACB620F00049938 /* SubOrderCicadinea.h */,
 				84D8C7921ACB620F00049938 /* SubOrderCicadinea.m */,
+				84354A5E1ACD9AC800812782 /* SubOrderPsyllinea.h */,
+				84354A5F1ACD9AC800812782 /* SubOrderPsyllinea.m */,
+				84354A611ACDA18400812782 /* SubOrderAleurodinea.h */,
+				84354A621ACDA18400812782 /* SubOrderAleurodinea.m */,
+				84354A641ACDA58300812782 /* SubOrderAphidinea.h */,
+				84354A651ACDA58300812782 /* SubOrderAphidinea.m */,
+				84354A671ACDA8E100812782 /* SubOrderCoccinea.h */,
+				84354A681ACDA8E100812782 /* SubOrderCoccinea.m */,
 			);
 			name = OdersInsects;
 			sourceTree = "<group>";
@@ -240,12 +260,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84354A601ACD9AC800812782 /* SubOrderPsyllinea.m in Sources */,
 				84D8C78D1ACB43C300049938 /* OrderHomoptera.m in Sources */,
 				84D8C7931ACB620F00049938 /* SubOrderCicadinea.m in Sources */,
+				84354A661ACDA58300812782 /* SubOrderAphidinea.m in Sources */,
 				84D8C7671ACB430600049938 /* AppDelegate.m in Sources */,
 				84D8C7641ACB430600049938 /* main.m in Sources */,
 				84D8C76D1ACB430600049938 /* ViewController.m in Sources */,
 				84D8C76A1ACB430600049938 /* LessonTwo.xcdatamodeld in Sources */,
+				84354A691ACDA8E100812782 /* SubOrderCoccinea.m in Sources */,
+				84354A631ACDA18400812782 /* SubOrderAleurodinea.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +462,7 @@
 				84D8C7861ACB430600049938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84D8C7871ACB430600049938 /* Build configuration list for PBXNativeTarget "LessonTwoTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +471,7 @@
 				84D8C7891ACB430600049938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
